@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Input message</title>
+</head>
+<body>
+
+  <p th:text="${message}">ここにメッセージが表示されます。</p>
+  <form method="post" action="/index">
+    <input type="text" name="message" />
+    <button type="submit">送信</button>
+  </form>
+</body>
+</html>
